@@ -26,7 +26,6 @@ RUN curl -fSL -o ruby.tar.gz "http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ru
 	&& make install \
 	&& apt-get purge -y --auto-remove bison libgdbm-dev ruby \
 	&& gem update --system $RUBYGEMS_VERSION \
-	&& rm -r /usr/src/ruby
 
 # install things globally, for great justice
 ENV GEM_HOME /usr/local/bundle
