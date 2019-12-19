@@ -10,5 +10,6 @@ RUN apt-get update \
 	    dnsutils \
 	    tmux \
 	    vim-nox \
+	    iproute2 \
 	&& rm -rf /var/lib/apt/lists/*
 
